@@ -1,0 +1,42 @@
+/* Sección Sobre Mi */
+.about {
+  background: var(--dark-gray);
+  color: var(--text-white);
+  padding: 3rem 3rem 6rem;
+}
+.about__paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.hobbies__title {
+  font-family: "Fugaz One", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.hobbies__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.hobbies__card {
+  width: 8.4rem;
+  background: var(--secondary-red);
+  box-shadow: inset -2rem -2rem 4rem #d51f35,
+    inset 2rem 2rem 4rem #ff2743;  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.4rem;
+}
+.hobbies__img {
+  width: 2rem;
+}
+.hobbies__name {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: black;
+}

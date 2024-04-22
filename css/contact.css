@@ -1,0 +1,43 @@
+/* Sección Sobre Mi */
+.contact {
+  background: var(--dark-gray);
+  color: var(--text-white);
+  padding: 3rem 3rem 5rem;
+}
+.contact__subtext {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.contact__input,.contact__textarea {
+  width: 28rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.4rem 0.8rem;
+}
+.contact__input {
+  height: 2.4rem;
+}
+.contact__textarea {
+  height: 12rem;
+}
+.contact__button {
+  align-self: center;
+  background: var(--primary-red);
+  box-shadow: inset -2rem -2rem 4rem #c10424,
+    inset 2rem 2rem 4rem #f1042e;
+  width: 12rem;
+  height: 3.2rem;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+}

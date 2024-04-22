@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="header__title">CM</h1>
+      <ul class="menu__list">
+          <li class="menu__list__item inactive"><a href="#sobre-mi">Sobre mi</a></li>
+          <li class="menu__list__item inactive"><a href="#skills">Skills</a></li>
+          <li class="menu__list__item inactive"><a href="#hobbies">Hobbies</a></li>
+          <li class="menu__list__item inactive"><a href="#formacion">Formación</a></li>
+          <li class="menu__list__item inactive"><a href="#xp">Proyectos</a></li>
+          <li class="menu__list__item"><a href="#contacto">carlosmiguel@contacto.com</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección hero -->
+    <section class="hero">
+      <div class="hero__container">
+        <img class="hero__picture" src="assets/img/perfil.jpeg" alt="Imagen de perfil de Carlos Miguel">
+        <h2 class="hero__title">Carlos Miguel</h2>
+        <h3 class="hero__subtitle">Desarrollador Front End en formación</h3>
+        <ul class="network">
+          <li class="network__item"><a href="#"><img class="network__item__icon" src="/assets/icons/github.png" alt="Github"></a></li>
+          <li class="network__item"><a href="#"><img class="network__item__icon" src="/assets/icons/linkedin.png" alt="Linkedin"></a></li>
+          <li class="network__item"><a href="#"><img class="network__item__icon" src="/assets/icons/x-media.png" alt="X"></a></li>
+          <li class="network__item"><a href="#"><img class="network__item__icon" src="/assets/icons/instagram.png" alt="Instagram"></a></li>
+        </ul>
+        <button class="hero__button-cv">Descargar CV</button>
+      </div>
+    </section>
+    <!-- Sección sobre mi -->
+    <section class="about" id="sobre-mi">
+      <div class="about__container">
+        <h3 class="about__title">Sobre mi</h3>
+        <!-- <h3 class="hero__subtitle">Actualmente estudio Ingeniería de Sistemas en la UPDS - Sede Sucre y paralelamente estoy participando en el proyecto Oracle ONE en Alura Latam.</h3> -->
+        <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+        <section class="about__hobbies">
+          <h4 class="hobbies__title">Mis hobbies</h4>
+          <div class="hobbies__container">
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/workout.png" alt="Calistenia">
+              <h3 class="hobbies__name">Calistenia</h3>
+            </article>
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/coffee.png" alt="Café">
+              <h3 class="hobbies__name">Café</h3>
+            </article>
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/cinema.png" alt="Cine">
+              <h3 class="hobbies__name">Cine</h3>
+            </article>
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/music.png" alt="Música">
+              <h3 class="hobbies__name">Música</h3>
+            </article>
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/travels.png" alt="Viajes">
+              <h3 class="hobbies__name">Viajes</h3>
+            </article>
+            <article class="hobbies__card">
+              <img class="hobbies__img" src="/assets/icons/books.png" alt="Libros">
+              <h3 class="hobbies__name">Libros</h3>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Sección de Skills -->
+    <section class="skills" id="skills">
+      <h3 class="skills__title">Skills</h3>
+        <div class="skills__container">
+          <div class="skills__card">
+            <img class="skills__card__img" src="/assets/logos/html-logo.png" alt="HTML">
+            <p class="skills__card__name">HTML</p>
+          </div>
+          <div class="skills__card">
+            <img  class="skills__card__img" src="/assets/logos/css-logo.png" alt="CSS">
+            <p class="skills__card__name">CSS</p>
+          </div>
+          <div class="skills__card">
+            <img class="skills__card__img" src="/assets/logos/js-logo.png" alt="JavaScript">
+            <p class="skills__card__name">JavaScript</p>
+          </div>
+          <div class="skills__card">
+            <img class="skills__card__img" src="/assets/logos/git-logo.png" alt="Git y GitHub">
+            <p class="skills__card__name">Git y GitHub</p>
+          </div>
+        </div>
+    </section>
+    <!-- Sección de Formación académica -->
+    <section class="academic" id="formacion">
+      <h2 class="academic__title" >Formación Académica</h2>
+      <div class="academic__container">
+        <article class="academic__card">
+          <img class="academic__card__img" src="/assets/logos/upds-logo.png" alt="Logo de la UPDS">
+          <h4 class="academic__card__title">Ingenieria de Sistemas</h4>
+          <p class="academic__card__subtitle">En curso - UPDS</p>
+        </article>
+        <article class="academic__card">
+          <img class="academic__card__img" src="/assets/logos/alura-logo.png" alt="Logo de Alura">
+          <h4 class="academic__card__title">Formación en Desarrollo Web Front End</h4>
+          <p class="academic__card__subtitle">En curso - Alura LATAM</p>
+        </article>
+      </div>
+    </section>
+    <!-- Sección de Experiencia Profesional/Proyectos-->
+    <section class="experiencie" id="xp">
+      <h2 class="experiencie__title">Experiencia con Proyectos</h2>
+      <div class="experiencie__container">
+        <picture class="experiencie__img">
+          <img class="experiencie__img__capture" src="assets\">
+        </picture>
+        <div class="experiencie__info">
+          <h2 class="experiencie__name">Juego del Número Secreto</h2>
+          <p class="experiencie__text">Juego creado con HTML y JavaScript</p>
+          <div class="experiencie__buttons">
+            <span class="experiencie__repo">
+              <a href="https://github.com/"><button class="experiencie__button--repo">Repositorio</button></a>
+            </span>
+            <span class="experiencie__demo">
+              <a href=""><button class="experiencie__button--demo">Ver demo</button></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="experiencie__container">
+        <picture class="experiencie__img">
+          <img class="experiencie__img__capture" src="assets\">
+        </picture>
+        <div class="experiencie__info">
+          <h2 class="experiencie__name">Juego del Número Secreto</h2>
+          <p class="experiencie__text">Juego creado con HTML y JavaScript</p>
+          <div class="experiencie__buttons">
+            <span class="experiencie__repo">
+              <a href="https://github.com/"><button class="experiencie__button--repo">Repositorio</button></a>
+            </span>
+            <span class="experiencie__demo">
+              <a href=""><button class="experiencie__button--demo">Ver demo</button></a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="experiencie__container">
+        <picture class="experiencie__img">
+          <img class="experiencie__img__capture" src="assets\">
+        </picture>
+        <div class="experiencie__info">
+          <h2 class="experiencie__name">Juego del Número Secreto</h2>
+          <p class="experiencie__text">Juego creado con HTML y JavaScript</p>
+          <div class="experiencie__buttons">
+            <span class="experiencie__repo">
+              <a href="https://github.com/"><button class="experiencie__button--repo">Repositorio</button></a>
+            </span>
+            <span class="experiencie__demo">
+              <a href=""><button class="experiencie__button--demo">Ver demo</button></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contacto">
+      <div  class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </p>
+        <form class="contact__form" name="form">
+          <input class="contact__input" type="text" name="nombre" placeholder="Nombre">
+          <input class="contact__input" type="email" name="email" placeholder="E-mail">
+          <input class="contact__input" type="text" name="asunto" placeholder="Assunto">
+          <textarea class="contact__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+          <button type="submit" class="contact__button">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer">
+      <h4 class="footer__title">Desarrollado por Carlos Miguel</h4>
+      <p class="footer__year">2024</p>
+    </section>
+  </footer>
+</body>
+</html>

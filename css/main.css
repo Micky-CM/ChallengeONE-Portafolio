@@ -1,0 +1,37 @@
+/* Estilos de las secciones */
+@import url(/css/header.css);
+@import url(/css/hero.css);
+@import url(/css/about.css);
+@import url(/css/skills.css);
+@import url(/css/academic.css);
+@import url(/css/experience.css);
+@import url(/css/contact.css);
+@import url(/css/footer.css);
+
+/* Paleta de colores */
+:root {
+  --primary-red: #d90429;
+  --secondary-red: #ef233c;
+  --text-white: #edf2f4;
+  --secondary-gray: #8d99ae;
+  --primary-gray: #2b2d42;
+  --dark-gray: #1b1e30;
+}
+html {
+  font-size: 62.5%;
+}
+
+.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
+  font-family: "Fugaz One", sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-shadow: 0.5rem 0.5rem 1rem black;
+  margin-bottom: 1.4rem;
+}
+/*
+titulos
+  font-family: "Fugaz One", sans-serif;
+parrafos
+  font-family: "Roboto", sans-serif;
+  */

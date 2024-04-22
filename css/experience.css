@@ -1,0 +1,60 @@
+/* Sección Habilidades */
+.experiencie {
+  background: var(--primary-gray);
+  color: var(--text-white);
+  padding: 3rem 1rem 4rem;
+}
+.experiencie__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.experiencie__img__capture {
+  width: 28rem;
+  height: 18rem;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+.experience__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experiencie__name {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+.experiencie__text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.experiencie__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.experiencie__button--repo, .experiencie__button--demo {
+  align-self: center;
+  width: 10rem;
+  height: 3.2rem;
+  border-radius: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+}
+.experiencie__button--repo {
+  background: var(--primary-red);
+  box-shadow: inset -2rem -2rem 4rem #c10424,
+    inset 2rem 2rem 4rem #f1042e;
+  font-weight: 400;
+}
+.experiencie__button--demo {
+  border: solid 0.2rem var(--primary-red);
+  color: var(--primary-red);
+  font-weight: 900;
+}
