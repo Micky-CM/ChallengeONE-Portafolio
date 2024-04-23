@@ -4,13 +4,12 @@
   flex-direction: column;
   background: var(--primary-gray);
   color: var(--text-white);
-  padding: 3rem 1rem 6rem;
+  padding: 3rem 1rem 5rem;
 }
 .skills__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.6rem;
+  justify-content: space-evenly;
 }
 .skills__card {
   display: flex;
@@ -22,7 +21,7 @@
   border-radius: 0.8rem;
   box-shadow: inset -1rem -1rem 2rem #11121a,
     inset 1rem 1rem 2rem #45486a;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .skills__card__img {
   width: 8rem;

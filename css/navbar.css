@@ -14,10 +14,7 @@
   padding: 1rem 2rem;
   transition: background-color 0.3s ease;
 }
-.navbar:hover {
-  background-color: rgba(27, 30, 48, 0.5);
-}
-.header__title {
+.navbar__title {
   font-family: "Fugaz One", sans-serif;
   color: var(--primary-red);
   font-weight: 900;
@@ -37,6 +34,5 @@
 
 main {
   position: relative;
-  top: 5rem;
   left: 0;
 }

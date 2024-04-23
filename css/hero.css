@@ -1,5 +1,5 @@
 /* Sección Hero */
-.hero {
+.header {
   position: relative;
   background: url(/assets/img/banner-frontend.jpg);
   background-size: cover;
@@ -7,24 +7,24 @@
   background-position: center center;
   width: 100%;
   height: auto;
-  padding: 2rem 1rem;
 }
-.hero::before {
+.header::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .hero__container {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--text-white);
-  padding: 1.2rem 1rem;
+  padding: 7rem 1.2rem 2rem;
 }
 .hero__picture {
   width: 12rem;
