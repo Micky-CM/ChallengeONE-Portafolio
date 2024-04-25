@@ -6,9 +6,10 @@
 }
 .contact__subtext {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 1.6rem;
 }
 .contact__form {
   display: flex;
@@ -17,8 +18,9 @@
   gap: 2rem;
 }
 .contact__input,.contact__textarea {
-  width: 28rem;
+  width: 100%;
   font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 1.4rem;
   font-weight: 400;
   padding: 0.4rem 0.8rem;
@@ -34,10 +36,52 @@
   background: var(--primary-red);
   box-shadow: inset -2rem -2rem 4rem #c10424,
     inset 2rem 2rem 4rem #f1042e;
-  width: 12rem;
+  width: 14rem;
   height: 3.2rem;
   border-radius: 8px;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 800;
+}
+
+
+/* Media query para tablet */
+@media screen and (min-width: 601px) {
+  .contact {
+    padding: 3rem 6rem 5rem;
+  }
+  .contact__input,.contact__textarea {
+    width: 48rem;
+  }
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .contact {
+    padding: 4rem 10rem 7rem;
+  }
+  .contact__subtext {
+    font-size: 1.8rem;
+  }
+  .contact__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact__img {
+    width: 38%;
+    height: 34rem;
+    border-radius: 0.8rem;
+    object-fit: cover;
+  }
+  .contact__form {
+    width: 46%;
+  }
+  .contact__input,.contact__textarea {
+    width: 100%;
+  }
+  .contact__button:hover {
+    transform: scale(1.1);
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+  }
 }

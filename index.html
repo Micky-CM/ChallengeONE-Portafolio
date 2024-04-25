@@ -14,11 +14,10 @@
   <header class="header">
     <!-- Sección de navbar -->
     <nav class="navbar">
-      <h1 class="navbar__title">CM</h1>
+      <h1 class="navbar__title"><a href="">CM</a></h1>
       <ul class="menu__list">
           <li class="menu__list__item inactive"><a href="#sobre-mi">Sobre mi</a></li>
           <li class="menu__list__item inactive"><a href="#skills">Skills</a></li>
-          <li class="menu__list__item inactive"><a href="#hobbies">Hobbies</a></li>
           <li class="menu__list__item inactive"><a href="#formacion">Formación</a></li>
           <li class="menu__list__item inactive"><a href="#xp">Proyectos</a></li>
           <li class="menu__list__item"><a href="#contacto">carlosmiguel@contacto.com</a></li>
@@ -107,7 +106,7 @@
       <div class="academic__container">
         <article class="academic__card">
           <img class="academic__card__img" src="/assets/logos/upds-logo.png" alt="Logo de la UPDS">
-          <h4 class="academic__card__title">Ingenieria de Sistemas</h4>
+          <h4 class="academic__card__title">Ingenieria de Sistemas Informáticos</h4>
           <p class="academic__card__subtitle">En curso - UPDS</p>
         </article>
         <article class="academic__card">
@@ -179,13 +178,16 @@
       <div  class="contact__container">
         <h2 class="contact__title">Contacto</h2>
         <p class="contact__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </p>
-        <form class="contact__form" name="form">
-          <input class="contact__input" type="text" name="nombre" placeholder="Nombre">
-          <input class="contact__input" type="email" name="email" placeholder="E-mail">
-          <input class="contact__input" type="text" name="asunto" placeholder="Assunto">
-          <textarea class="contact__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-          <button type="submit" class="contact__button">Enviar mensaje</button>
-        </form>
+        <div class="contact__box">
+          <img class="contact__img inactive" src="/assets/img/send-mail.jpg" alt="Respondiendo un correo electrónico">
+          <form class="contact__form" name="form">
+            <input class="contact__input" type="text" name="nombre" placeholder="Nombre">
+            <input class="contact__input" type="email" name="email" placeholder="E-mail">
+            <input class="contact__input" type="text" name="asunto" placeholder="Assunto">
+            <textarea class="contact__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit" class="contact__button">Enviar mensaje</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

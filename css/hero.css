@@ -31,11 +31,14 @@
   height: 12rem;
   border: var(--primary-gray) 7px solid;
   border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 1rem black;
+  margin-bottom: 0.5rem;
 }
 .hero__title {
   font-family: "Fugaz One", sans-serif;
   font-size: 2.6rem;
   font-weight: 500;
+  text-shadow: 0.5rem 0.5rem 1rem black;
   margin-bottom: 0.4rem;
 }
 .hero__subtitle {
@@ -43,10 +46,12 @@
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
+  text-shadow: 0.5rem 0.5rem 0.5rem black;
   margin-bottom: 1rem;
 }
 .network {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
   gap: 1.2rem;
@@ -70,10 +75,42 @@
     inset 2rem 2rem 4rem #f1042e;
   padding: 0.6rem;
 }
-/*Colores para el hover
-  background: var(--primary-red);
-  box-shadow: 0.5rem 0.5rem 2rem #c10424,
-    -0.5rem -0.5rem 4rem #f1042e;
 
 
-*/
+/* Media query para tablet */
+@media screen and (min-width: 600px) {
+  .hero__picture {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .hero__container {
+    padding: 9.5rem 3rem 4rem;
+  }
+  .hero__picture {
+    width: 15rem;
+    height: 15rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .hero__subtitle {
+    font-size: 2rem;
+  }
+  .network__item__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .hero__button-cv {
+    width: 14rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .network__item__icon:hover, .hero__button-cv:hover {
+    transform: scale(1.1);
+    box-shadow: 0.5rem 0.5rem 0.5rem black;
+  }
+}

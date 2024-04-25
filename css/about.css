@@ -2,7 +2,7 @@
 .about {
   background: var(--dark-gray);
   color: var(--text-white);
-  padding: 3rem 3rem 6rem;
+  padding: 3rem 3rem 5rem;
 }
 .about__paragraph {
   font-family: "Roboto", sans-serif;
@@ -15,16 +15,17 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 .hobbies__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 1.2rem;
 }
 .hobbies__card {
-  width: 8.4rem;
+  width: 8rem;
+  height: auto;
   background: var(--secondary-red);
   box-shadow: inset -2rem -2rem 4rem #d51f35,
     inset 2rem 2rem 4rem #ff2743;  text-align: center;
@@ -39,4 +40,28 @@
   font-size: 1.2rem;
   font-weight: 800;
   color: black;
+}
+
+
+/* Media query para tablet */
+@media screen and (min-width: 500px) {
+  .about {
+    padding: 3rem 5rem 5rem;
+  }
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 4rem 10rem 7rem;
+  }
+  .about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+  }
+  .about__paragraph {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 }

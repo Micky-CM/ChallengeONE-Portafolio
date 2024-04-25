@@ -1,18 +1,18 @@
-/* Mobile First rgba()*/
+/* Sección del navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(27, 30, 48, 0.9);
+  background-color: rgba(27, 30, 48, 0.5);
+  transition: background-color 0.3s ease;
   color: var(--text-white);
   width: 100%;
   height: 5rem;
   padding: 1rem 2rem;
-  transition: background-color 0.3s ease;
 }
 .navbar__title {
   font-family: "Fugaz One", sans-serif;
@@ -32,7 +32,40 @@
   display: none;
 }
 
-main {
-  position: relative;
-  left: 0;
+
+/* Media query para tablet */
+  /* No hace falta realizar modificaciones */
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .inactive {
+    display: block;
+  }
+  .navbar {
+    height: 6rem;
+    padding: 1rem 3rem;
+  }
+  .navbar__title {
+    font-size: 4rem;
+  }
+  .navbar__title:hover {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 0.5rem 1rem black;
+  }
+  .menu__list {
+    align-items: center;
+    gap: 2rem;
+  }
+  .menu__list__item {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+  .menu__list__item:hover {
+    background: var(--primary-gray);
+    border-radius: 0.5rem;
+    transform: scale(1.1);
+    color: var(--primary-red);
+    font-weight: bolder;
+    padding: 1rem;
+  }
 }

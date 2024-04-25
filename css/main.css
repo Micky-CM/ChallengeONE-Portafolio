@@ -17,21 +17,7 @@
   --primary-gray: #2b2d42;
   --dark-gray: #1b1e30;
 }
+/* Tamaño de textos en rem */
 html {
   font-size: 62.5%;
 }
-
-.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
-  font-family: "Fugaz One", sans-serif;
-  text-align: center;
-  font-size: 2.6rem;
-  font-weight: 400;
-  text-shadow: 0.5rem 0.5rem 1rem black;
-  margin-bottom: 1.4rem;
-}
-/*
-titulos
-  font-family: "Fugaz One", sans-serif;
-parrafos
-  font-family: "Roboto", sans-serif;
-  */

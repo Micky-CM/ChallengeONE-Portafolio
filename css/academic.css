@@ -10,6 +10,14 @@
   justify-content: center;
   gap: 1.6rem;
 }
+.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
+  font-family: "Fugaz One", sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-shadow: 0.5rem 0.5rem 1rem black;
+  margin-bottom: 1.4rem;
+}
 .academic__card {
   display: flex;
   flex-direction: column;
@@ -26,8 +34,7 @@
   width: 90%;
   height: 18rem;
   border-radius: 0.5rem;
-  object-fit: cover;
-  margin-bottom: 2rem;
+  object-fit: contain;
 }
 .academic__card__title {
   font-family: "Roboto", sans-serif;
@@ -42,4 +49,21 @@
   font-size: 1.4rem;
   font-weight: 600;
 }
-/*  */
+
+
+/* Media query para tablet */
+@media screen and (min-width: 401px) {
+  .academic__container {
+    justify-content: space-evenly;
+  }
+  .academic__card {
+    width: 26rem;
+  }
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .academic {
+    padding: 4rem 10rem 7rem;
+  }
+}

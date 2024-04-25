@@ -9,29 +9,40 @@
 .skills__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 .skills__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 14rem;
+  width: 13rem;
   height: auto;
   padding: 2rem;
   border-radius: 0.8rem;
   box-shadow: inset -1rem -1rem 2rem #11121a,
     inset 1rem 1rem 2rem #45486a;
-  margin-bottom: 2rem;
 }
 .skills__card__img {
-  width: 8rem;
-  height: 8rem;
+  width: 7rem;
+  height: 7rem;
   object-fit: cover;
   margin-bottom: 0.8rem;
 
 }
 .skills__card__name {
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
+}
+
+
+/* Media query para tablet */
+  /* No hace falta realizar modificaciones */
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+  .skills {
+    padding: 4rem 10rem 7rem;
+  }
 }
