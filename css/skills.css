@@ -1,18 +1,18 @@
 /* Sección Habilidades */
-.skills {
+.skills{
   display: flex;
   flex-direction: column;
   background: var(--primary-gray);
   color: var(--text-white);
   padding: 3rem 1rem 5rem;
 }
-.skills__container {
+.skills__container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-.skills__card {
+.skills__card{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,14 +23,14 @@
   box-shadow: inset -1rem -1rem 2rem #11121a,
     inset 1rem 1rem 2rem #45486a;
 }
-.skills__card__img {
+.skills__card__img{
   width: 7rem;
   height: 7rem;
   object-fit: cover;
   margin-bottom: 0.8rem;
 
 }
-.skills__card__name {
+.skills__card__name{
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -41,8 +41,8 @@
   /* No hace falta realizar modificaciones */
 
 /* Media query para desktop */
-@media screen and (min-width: 1024px) {
-  .skills {
+@media screen and (min-width: 1024px){
+  .skills{
     padding: 4rem 10rem 7rem;
   }
 }

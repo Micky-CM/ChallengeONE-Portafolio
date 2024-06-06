@@ -1,5 +1,5 @@
 /* Sección Hero */
-.header {
+.header{
   position: relative;
   background: url(/assets/img/banner-frontend.jpg);
   background-size: cover;
@@ -8,7 +8,7 @@
   width: 100%;
   height: auto;
 }
-.header::before {
+.header::before{
   content: "";
   position: absolute;
   top: 0;
@@ -17,58 +17,59 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.hero__container {
+.hero__container{
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--text-white);
-  padding: 7rem 1.2rem 2rem;
+  padding: 7rem 1.2rem 3rem;
 }
-.hero__picture {
+.hero__picture{
   width: 12rem;
   height: 12rem;
   border: var(--primary-gray) 7px solid;
   border-radius: 50%;
   box-shadow: 0.5rem 0.5rem 1rem black;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
-.hero__title {
+.hero__title{
   font-family: "Fugaz One", sans-serif;
   font-size: 2.6rem;
   font-weight: 500;
   text-shadow: 0.5rem 0.5rem 1rem black;
   margin-bottom: 0.4rem;
 }
-.hero__subtitle {
+.hero__subtitle{
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 500;
   text-shadow: 0.5rem 0.5rem 0.5rem black;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
-.network {
+.network{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-family: "Roboto", sans-serif;
   gap: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
 }
-.network__item__icon {
-  width: 3rem;
-  height: 3rem;
+.network__item__icon{
+  width: 3.4rem;
+  height: 3.4rem;
   background: white;
   border: solid 1px white;
   border-radius: 0.8rem;
 }
-.hero__button-cv {
+.hero__button-cv{
   width: 12rem;
+  height: 4rem;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 700;
   border-radius: 0.8rem;
   background: var(--primary-red);
   box-shadow: inset -2rem -2rem 4rem #c10424,
@@ -78,38 +79,38 @@
 
 
 /* Media query para tablet */
-@media screen and (min-width: 600px) {
-  .hero__picture {
-    width: 13rem;
-    height: 13rem;
+@media screen and (min-width: 600px){
+  .hero__picture{
+    width: 15rem;
+    height: 15rem;
   }
 }
 
 /* Media query para desktop */
-@media screen and (min-width: 1024px) {
-  .hero__container {
-    padding: 9.5rem 3rem 4rem;
+@media screen and (min-width: 1024px){
+  .hero__container{
+    padding: 13rem 3rem 7rem;
   }
-  .hero__picture {
-    width: 15rem;
-    height: 15rem;
+  .hero__picture{
+    width: 18rem;
+    height: 18rem;
   }
-  .hero__title {
-    font-size: 3rem;
+  .hero__title{
+    font-size: 3.4rem;
   }
-  .hero__subtitle {
-    font-size: 2rem;
+  .hero__subtitle{
+    font-size: 2.2rem;
   }
-  .network__item__icon {
-    width: 3.5rem;
-    height: 3.5rem;
+  .network__item__icon{
+    width: 3.8rem;
+    height: 3.8rem;
   }
-  .hero__button-cv {
-    width: 14rem;
-    font-size: 1.6rem;
-    font-weight: 600;
+  .hero__button-cv{
+    width: 16rem;
+    font-size: 1.8rem;
+    font-weight: 800;
   }
-  .network__item__icon:hover, .hero__button-cv:hover {
+  .network__item__icon:hover, .hero__button-cv:hover{
     transform: scale(1.1);
     box-shadow: 0.5rem 0.5rem 0.5rem black;
   }

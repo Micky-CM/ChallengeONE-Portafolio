@@ -1,16 +1,16 @@
 /* Importar root de main */
-.academic {
+.academic{
   background: var(--dark-gray);
   color: var(--text-white);
   padding: 3rem 2rem 5rem;
 }
-.academic__container {
+.academic__container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.6rem;
 }
-.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
+.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title{
   font-family: "Fugaz One", sans-serif;
   text-align: center;
   font-size: 2.6rem;
@@ -18,7 +18,7 @@
   text-shadow: 0.5rem 0.5rem 1rem black;
   margin-bottom: 1.4rem;
 }
-.academic__card {
+.academic__card{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,40 +30,40 @@
     inset 2rem 2rem 4rem #282c47;
   margin-bottom: 1rem;
 }
-.academic__card__img {
+.academic__card__img{
   width: 90%;
   height: 18rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   object-fit: contain;
 }
-.academic__card__title {
+.academic__card__title{
   font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 0.6rem;
 }
-.academic__card__subtitle {
+.academic__card__subtitle{
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 
 /* Media query para tablet */
-@media screen and (min-width: 401px) {
-  .academic__container {
+@media screen and (min-width: 601px){
+  .academic__container{
     justify-content: space-evenly;
   }
-  .academic__card {
+  .academic__card{
     width: 26rem;
   }
 }
 
 /* Media query para desktop */
-@media screen and (min-width: 1024px) {
-  .academic {
+@media screen and (min-width: 1024px){
+  .academic{
     padding: 4rem 10rem 7rem;
   }
 }

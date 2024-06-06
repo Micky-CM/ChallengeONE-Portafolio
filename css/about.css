@@ -1,29 +1,34 @@
 /* Sección Sobre Mi */
-.about {
+.about{
   background: var(--dark-gray);
   color: var(--text-white);
   padding: 3rem 3rem 5rem;
 }
-.about__paragraph {
+.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title{
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+.about__paragraph{
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 3rem;
 }
-.hobbies__title {
+.hobbies__title{
   font-family: "Fugaz One", sans-serif;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1.6rem;
 }
-.hobbies__container {
+.hobbies__container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.2rem;
 }
-.hobbies__card {
+.hobbies__card{
   width: 8rem;
   height: auto;
   background: var(--secondary-red);
@@ -32,35 +37,31 @@
   border-radius: 0.5rem;
   padding: 0.4rem;
 }
-.hobbies__img {
+.hobbies__img{
   width: 2rem;
 }
-.hobbies__name {
+.hobbies__name{
   font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: black;
 }
 
 
 /* Media query para tablet */
-@media screen and (min-width: 500px) {
-  .about {
-    padding: 3rem 5rem 5rem;
+@media screen and (min-width: 600px){
+  .about{
+    padding: 3rem 10rem 5rem;
   }
 }
 
 /* Media query para desktop */
-@media screen and (min-width: 1024px) {
-  .about {
-    padding: 4rem 10rem 7rem;
+@media screen and (min-width: 1024px){
+  .about{
+    padding: 4rem 16rem 7rem;
   }
-  .about__title, .skills__title, .academic__title, .experiencie__title, .contact__title {
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 1.8rem;
-  }
-  .about__paragraph {
+
+  .about__paragraph{
     font-size: 1.8rem;
     font-weight: 600;
   }

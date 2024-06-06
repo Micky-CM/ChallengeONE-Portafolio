@@ -1,15 +1,15 @@
 /* Sección Habilidades */
-.experiencie {
+.experiencie{
   background: var(--primary-gray);
   color: var(--text-white);
   padding: 3rem 1rem 3rem;
 }
-.experience__container {
+.experience__container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.experiencie__box {
+.experiencie__box{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,54 +18,59 @@
   border-radius: 0.8rem;
   box-shadow: inset -1rem -1rem 2rem #11121a,
     inset 1rem 1rem 2rem #45486a;
-    padding: 2rem;
+  padding: 3rem 2rem;
+  gap: 1rem;
   margin-bottom: 4rem;
 }
-.experiencie__img__capture {
-  width: 90%;
-  height: 20rem;
-  border-radius: 0.5rem;
+.experiencie__img{
+  width: 100%;
+  height: auto;
+}
+.experiencie__img__capture{
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
   object-fit: cover;
   margin-bottom: 0.8rem;
 }
-.experience__info {
+.experience__info{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.experiencie__name {
+.experiencie__name{
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 900;
   margin-bottom: 0.6rem;
 }
-.experiencie__text {
+.experiencie__text{
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
 }
-.experiencie__buttons {
+.experiencie__buttons{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.experiencie__button--repo, .experiencie__button--demo {
+.experiencie__button--repo, .experiencie__button--demo{
   align-self: center;
-  width: 10rem;
-  height: 3.2rem;
+  width: 12rem;
+  height: 4rem;
   border-radius: 0.8rem;
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
-.experiencie__button--repo {
+.experiencie__button--repo{
   background: var(--primary-red);
   box-shadow: inset -2rem -2rem 4rem #c10424,
     inset 2rem 2rem 4rem #f1042e;
   font-weight: 500;
 }
-.experiencie__button--demo {
+.experiencie__button--demo{
   border: solid 0.2rem var(--primary-red);
   color: var(--primary-red);
   font-weight: 900;
@@ -73,26 +78,41 @@
 
 
 /* Media query para tablet */
-  /* No hace falta realizar modificaciones */
+@media screen and (min-width: 601px){
+  .experiencie__box{
+    width: 70%;
+    padding: 4rem;
+  }
+  .experiencie__buttons{
+    justify-content: center;
+    gap: 3rem;
+  }
+}
 
 /* Media query para desktop */
-@media screen and (min-width: 1024px) {
-  .experiencie {
+@media screen and (min-width: 1024px){
+  .experiencie{
     padding: 4rem 6rem 6rem;
   }
-  .experiencie__box:nth-child(odd) {
+  .experiencie__box{
+    width: 90%;
+  }
+  .experiencie__box:nth-child(odd){
     flex-direction: row;
     justify-content: space-around;
   }
-  .experiencie__box:nth-child(even) {
+  .experiencie__box:nth-child(even){
     flex-direction: row-reverse;
     justify-content: space-around;
   }
-  .experiencie__button--repo:hover, .experiencie__button--demo:hover {
+  .experiencie__img{
+    width: 60rem;
+  }
+  .experiencie__button--repo:hover, .experiencie__button--demo:hover{
     transform: scale(1.1);
     box-shadow: 0.5rem 0.5rem 0.5rem black;
   }
-  .experiencie__button--demo:hover {
+  .experiencie__button--demo:hover{
     text-shadow: 0.5rem 0.5rem 0.5rem black;
   }
 }
