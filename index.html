@@ -53,8 +53,8 @@
     <section class="about" id="sobre-mi">
       <div class="about__container">
         <h3 class="about__title">Sobre mi</h3>
-        <p class="about__paragraph">Entusiasta de la tecnología y comprometido con el desarrollo de soluciones innovadoras. Me siento cómodo trabajando en equipos diversos y comprometidos que se esfuerzan en sacar adelante proyectos de impacto e innovadores.</p>
-        <p class="about__paragraph">Estudio Ingeniería de Sistemas Informáticos en la UPDS - Sucre y paralelamente participo en el proyecto Oracle ONE en Alura Latam para la especialización de Desarrollador Web Front End. Me encanta aprender constantemente sobre distintas áreas, en especial programación y gestión empresarial.</p>
+        <p class="about__paragraph">Soy un entusiasta de la tecnología y estoy comprometido con el desarrollo de soluciones innovadoras. Estudio Ingeniería de Sistemas en la UPDS - Sucre y paralelamente participo en el proyecto Oracle ONE con Alura Latam dentro de la especialización de Desarrollo Web Front End.</p>
+        <p class="about__paragraph"> Me encanta aprender constantemente sobre distintas áreas, en especial programación y gestión empresarial. Me siento cómodo trabajando en equipos diversos y comprometidos que se esfuerzan en sacar adelante proyectos de impacto.</p>
         <section class="about__hobbies">
           <h4 class="hobbies__title">Mis hobbies</h4>
           <ul class="hobbies__container">
@@ -136,7 +136,7 @@
       <div class="experience__container">
         <article class="experiencie__box">
           <picture class="experiencie__img">
-            <img class="experiencie__img__capture" src="assets/img/encriptador.png">
+            <img class="experiencie__img__capture" src="assets/img/encriptador.png" alt="Captura de pantalla del proyecto Encriptador">
           </picture>
           <div class="experiencie__info">
             <h2 class="experiencie__name">Desafío Encriptador</h2>
@@ -147,9 +147,22 @@
             </div>
           </div>
         </article>
-        <div class="experiencie__box">
+        <article class="experiencie__box">
           <picture class="experiencie__img">
-            <img class="experiencie__img__capture" src="assets/img/barberia.png">
+            <img class="experiencie__img__capture" src="assets/img/pet-house.png" alt="Captura de pantalla de la landing page de Pet House">
+          </picture>
+          <div class="experiencie__info">
+            <h2 class="experiencie__name">Pet House Web</h2>
+            <p class="experiencie__text">Landing page responsive para un hogar de mascotas creada con HTML y CSS</p>
+            <div class="experiencie__buttons">
+              <button class="experiencie__button--repo"><a href="https://github.com/Micky-CM/pet-house-web">Repositorio</a></button>
+              <button class="experiencie__button--demo"><a  href="https://micky-cm.github.io/pet-house-web/">Ver demo</a></button>
+            </div>
+          </div>
+        </article>
+        <article class="experiencie__box">
+          <picture class="experiencie__img">
+            <img class="experiencie__img__capture" src="assets/img/barberia.png" alt="Captura de pantalla de la web Barbería Alura">
           </picture>
           <div class="experiencie__info">
             <h2 class="experiencie__name">Barbería Alura</h2>
@@ -159,10 +172,10 @@
               <button class="experiencie__button--demo"><a  href="https://micky-cm.github.io/barberia-alura">Ver demo</a></button>
             </div>
           </div>
-        </div>
-        <div class="experiencie__box">
+        </article>
+        <article class="experiencie__box">
           <picture class="experiencie__img">
-            <img class="experiencie__img__capture" src="assets/img/juego-secreto.png">
+            <img class="experiencie__img__capture" src="assets/img/juego-secreto.png" alt="Captura de pantalla del proyecto juego del número secreto">
           </picture>
           <div class="experiencie__info">
             <h2 class="experiencie__name">Juego del Número Secreto</h2>
@@ -172,7 +185,7 @@
               <button class="experiencie__button--demo"><a  href="https://micky-cm.github.io/juego-numero-secreto/">Ver demo</a></button>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
     <!-- Sección de Contacto -->
@@ -182,12 +195,27 @@
         <p class="contact__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </p>
         <div class="contact__box">
           <img class="contact__img inactive" src="assets/img/send-mail.jpg" alt="Respondiendo un correo electrónico">
-          <form class="contact__form" name="form">
-            <input class="contact__input" type="text" name="nombre" placeholder="Nombre">
-            <input class="contact__input" type="email" name="email" placeholder="E-mail">
-            <input class="contact__input" type="text" name="asunto" placeholder="Assunto">
-            <textarea class="contact__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-            <button type="submit" class="contact__button">Enviar mensaje</button>
+          <form class="contact__form" name="form" data-form>
+            <fieldset class="contact-fieldset">
+              <input class="contact__input" type="text" name="nombre" id="nombre" minlength="3" maxlength="50" placeholder="Nombre" required>
+              <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="contact-fieldset">
+              <input class="contact__input" type="email" name="email" id="email" minlength="5" placeholder="E-mail" required>
+              <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="contact-fieldset">
+              <input class="contact__input" type="text" name="asunto" id="asunto" minlength="3" maxlength="50" placeholder="Asunto" required>
+              <span class="error-message"></span>
+            </fieldset>
+            <fieldset class="contact-fieldset">
+              <textarea class="contact__textarea" id="mensage" name="mensaje" minlength="5" maxlength="300" placeholder="Mensaje" required></textarea>
+              <span class="error-message"></span>
+            </fieldset>
+            <div>
+              <input class="contact__button" type="submit" value="Enviar mensaje"></input>
+              <span class="error-message"></span>
+            </div>
           </form>
         </div>
       </div>
@@ -214,5 +242,6 @@
       </li>
     </ul>
   </footer>
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

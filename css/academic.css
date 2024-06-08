@@ -1,4 +1,4 @@
-/* Importar root de main */
+/* Sección Académico */
 .academic{
   background: var(--dark-gray);
   color: var(--text-white);
@@ -9,14 +9,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.6rem;
-}
-.about__title, .skills__title, .academic__title, .experiencie__title, .contact__title{
-  font-family: "Fugaz One", sans-serif;
-  text-align: center;
-  font-size: 2.6rem;
-  font-weight: 400;
-  text-shadow: 0.5rem 0.5rem 1rem black;
-  margin-bottom: 1.4rem;
 }
 .academic__card{
   display: flex;

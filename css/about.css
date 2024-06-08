@@ -4,9 +4,13 @@
   color: var(--text-white);
   padding: 3rem 3rem 5rem;
 }
+/* Títulos de las secciones */
 .about__title, .skills__title, .academic__title, .experiencie__title, .contact__title{
-  font-size: 3rem;
+  font-family: "Fugaz One", sans-serif;
+  text-align: center;
+  font-size: 2.6rem;
   font-weight: 500;
+  text-shadow: 0.5rem 0.5rem 1rem black;
   margin-bottom: 1.8rem;
 }
 .about__paragraph{
@@ -53,6 +57,10 @@
   .about{
     padding: 3rem 10rem 5rem;
   }
+  .about__title, .skills__title, .academic__title, .experiencie__title, .contact__title{
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
 }
 
 /* Media query para desktop */
@@ -60,7 +68,6 @@
   .about{
     padding: 4rem 16rem 7rem;
   }
-
   .about__paragraph{
     font-size: 1.8rem;
     font-weight: 600;
